@@ -1,0 +1,15 @@
+[package]
+name = "http-body-to-bytes"
+version = "0.0.0"
+authors = ["vkill <vkill.net@gmail.com>"]
+edition = "2021"
+description = "HTTP Body to_bytes"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/bk-rs/http-body-ext"
+homepage = "https://github.com/bk-rs/http-body-ext"
+documentation = "https://docs.rs/http-body-to-bytes"
+keywords = []
+categories = []
+readme = "README.md"
+
+[dependencies]

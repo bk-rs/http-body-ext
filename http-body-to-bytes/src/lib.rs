@@ -109,6 +109,7 @@ mod tests {
     use futures_util::stream;
     use hyper::Body as HyperBody;
 
+    // Test copy from https://github.com/bk-rs/hyper-ext/blob/main/hyper-body-to-bytes/src/lib.rs
     #[tokio::test]
     async fn test_http_body_to_bytes() {
         let hyper_body = HyperBody::from("foo");
@@ -118,6 +119,7 @@ mod tests {
         );
     }
 
+    // Test copy from https://github.com/bk-rs/hyper-ext/blob/main/hyper-body-to-bytes/src/lib.rs
     #[tokio::test]
     async fn test_http_body_to_bytes_with_max_length() {
         let hyper_body = HyperBody::from("foobar");

@@ -13,3 +13,11 @@ categories = []
 readme = "README.md"
 
 [dependencies]
+http-body = { version = "0.4", default-features = false }
+bytes = { version = "1", default-features = false }
+
+futures-util = { version = "0.3", default-features = false }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+hyper = { version = "0.14", features = ["stream"] }

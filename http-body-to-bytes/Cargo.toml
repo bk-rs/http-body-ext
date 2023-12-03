@@ -1,6 +1,6 @@
 [package]
 name = "http-body-to-bytes"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["vkill <vkill.net@gmail.com>"]
 edition = "2021"
 description = "HTTP Body to_bytes"
@@ -13,11 +13,10 @@ categories = []
 readme = "README.md"
 
 [dependencies]
-http-body = { version = "0.4", default-features = false }
+http-body = { version = "1", default-features = false }
+http-body-util = { version = "0.1", default-features = false }
 bytes = { version = "1", default-features = false }
-
-futures-util = { version = "0.3", default-features = false }
 
 [dev-dependencies]
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
-hyper = { version = "0.14", features = ["stream"] }
+futures-util = { version = "0.3", default-features = false }

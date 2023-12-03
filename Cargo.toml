@@ -1,4 +1,3 @@
 [workspace]
-members = [
-    "http-body-to-bytes",
-]
+members = ["http-body-to-bytes"]
+resolver = "2"
